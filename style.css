@@ -1,0 +1,353 @@
+/* ================================
+   RESET
+================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* ================================
+     NAVIGATION
+  ================================= */
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F8F9FA;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(126, 123, 123, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .navigation:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .section-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navigation h1 {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #1F1F20;
+  }
+  
+  .article-navigation ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+  
+  .article-navigation a {
+    text-decoration: none;
+    color: #6f6f6f;
+    font-weight: 400;
+    transition: color 0.3s ease;
+  }
+  
+  .article-navigation a:hover {
+    color: #fd0000;
+  }
+  
+  /* ================================
+     SECTION IMAGE NOM
+  ================================= */
+  .section-image-nom {
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://images.unsplash.com/photo-1605128005752-d1714260611e?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(246, 243, 243);
+    text-align: center;
+    position: relative;
+    text-shadow: 1px 1px 4px rgba(53, 53, 53, 0.7);
+  }
+  
+  .section-image-nom::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  
+  .section-image-nom h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 5vw;
+    color: #F8F9FA;
+  }
+  
+  .section-image-nom p {
+    z-index: 2;
+    margin: 0.5rem 0;
+  }
+  
+  #etudiant {
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    background: #dcdcdca3;
+    border-radius: 15px;
+    font-size: 2vw;
+    padding: 5px 0;
+    color: #1F1F20;
+  }
+  
+  /* ================================
+     TITRES DE SECTION
+  ================================= */
+  .section-title {
+    font-family: "Dancing Script", cursive;
+    font-size: 4vw;
+    color: #333;
+    text-align: left;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  /* ================================
+     SECTION À PROPOS
+  ================================= */
+  .SectionApropos {
+    background-color: #ffffff;
+  }
+  
+  .SectionApropos h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .apropos-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .apropos-image img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  }
+  
+  .apropos-texte {
+    flex: 1;
+    min-width: 200px;
+    max-width: 500px;
+    background-color: #F8F9FA;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  }
+  
+  .apropos-texte h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #007BFF;
+  }
+  
+  .apropos-texte p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* ================================
+     SECTION COMPÉTENCES
+  ================================= */
+  .SectionCompétences {
+    background-color: #DCDCDC;
+    text-align: left;
+    position: relative;
+    margin-bottom: -5px;
+  }
+  
+  .competences-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .competence-card {
+    background-color: #faf8f8;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ================================
+     SECTION RÉFÉRENCES
+  ================================= */
+  .SectionRéférences {
+    background-color: #ffffff;
+    text-align: center;
+    margin-top: -5px;
+  }
+  
+  .references-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .reference-card {
+    background-color: #F8F9FA;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    width: 280px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .reference-card img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+  }
+  
+  .reference-card h2 {
+    font-size: 1.3rem;
+    color: #007BFF;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .reference-card p {
+    margin: 0.3rem 0;
+    color: #444;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+  
+  .reference-card a {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #fd0000;
+    text-decoration: none;
+    word-break: break-word;
+    text-align: center;
+  }
+  
+  .reference-card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ================================
+     SECTION ME CONTACTER
+  ================================= */
+  .SectionMeContacter {
+    background-color: #DCDCDC;
+    text-align: center;
+    position: relative;
+    margin-top: -5px;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #F8F9FA;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.3rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .contact-form button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* ================================
+     WAVES
+  ================================= */
+  .wave {
+    width: 100%;
+    height: 280px;
+    background: url('top wave.svg') repeat-x;
+    background-color: #ffffff;
+    background-size: 100% 100%;
+  }
+  
+  .wave-bot {
+    width: 100%;
+    height: 280px;
+    background: url('wave bot.svg') repeat-x;
+    background-color: #ffffff;
+    background-size: 100% 100%;
+  }
+  
+  .wave-bottom-competences,
+  .wave-top-contact {
+    line-height: 0;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .wave-bottom-competences svg,
+  .wave-top-contact svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .wave-top-contact {
+    margin-bottom: -1px;
+  }
+  
+  .wave-bottom-competences {
+    margin-top: -1px;
+  }
+  
