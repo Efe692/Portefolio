@@ -5,12 +5,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  /* ================================
-     NAVIGATION
-  ================================= */
-  .navigation {
+}
+
+* p {
+    font-family: "Hind Madurai", sans-serif;
+}
+
+/* ================================
+   NAVIGATION
+================================= */
+.navigation {
     position: fixed;
     top: 0;
     left: 0;
@@ -20,46 +24,48 @@
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(126, 123, 123, 0.1);
     transition: background-color 0.3s ease;
-  }
-  
-  .navigation:hover {
+}
+
+.navigation:hover {
     background-color: #f1f1f1;
-  }
-  
-  .section-navigation {
+}
+
+.section-navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .navigation h1 {
-    font-family: "Special Gothic Expanded One", sans-serif;
+}
+
+.navigation h1 {
+    
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;  
     font-weight: 400;
     font-size: 2rem;
     color: #1F1F20;
-  }
-  
-  .article-navigation ul {
+}
+
+.article-navigation ul {
     display: flex;
     gap: 2rem;
     list-style: none;
-  }
-  
-  .article-navigation a {
+}
+
+.article-navigation a {
     text-decoration: none;
     color: #6f6f6f;
     font-weight: 400;
-    transition: color 0.3s ease;
-  }
-  
-  .article-navigation a:hover {
-    color: #fd0000;
-  }
-  
-  /* ================================
-     SECTION IMAGE NOM
-  ================================= */
-  .section-image-nom {
+        transition: color 0.3s ease;
+}
+
+.article-navigation a:hover {
+    color: #000000;
+}
+
+/* ================================
+   SECTION IMAGE NOM
+================================= */
+.section-image-nom {
     height: 100vh;
     width: 100%;
     background-image: url('https://images.unsplash.com/photo-1605128005752-d1714260611e?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
@@ -74,28 +80,34 @@
     text-align: center;
     position: relative;
     text-shadow: 1px 1px 4px rgba(53, 53, 53, 0.7);
-  }
-  
-  .section-image-nom::before {
+}
+
+.section-image-nom::before {
     content: "";
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.4);
     z-index: 1;
-  }
-  
-  .section-image-nom h1 {
-    font-family: "Dancing Script", cursive;
-    font-size: 5vw;
-    color: #F8F9FA;
-  }
-  
-  .section-image-nom p {
+}
+
+.section-image-nom p {
     z-index: 2;
     margin: 0.5rem 0;
-  }
-  
-  #etudiant {
+}
+
+.section-image-nom h1 {
+
+    font-family: "Special Gothic Expanded One", sans-serif;
+    color: #CF9F13;
+    font-size: xxx-large;
+}
+
+.section-image-nom p {
+
+    font-family: "Hind Madurai", sans-serif;
+}
+
+#etudiant {
     width: 70vw;
     margin-left: auto;
     margin-right: auto;
@@ -104,36 +116,38 @@
     font-size: 2vw;
     padding: 5px 0;
     color: #1F1F20;
-  }
-  
-  /* ================================
-     TITRES DE SECTION
-  ================================= */
-  .section-title {
-    font-family: "Dancing Script", cursive;
+}
+
+/* ================================
+   TITRES DE SECTION
+================================= */
+.section-title {
+    font-family: "Hind Madurai", sans-serif;
     font-size: 4vw;
     color: #333;
     text-align: left;
     margin-left: 2rem;
     margin-bottom: 3rem;
-  }
-  
-  /* ================================
-     SECTION À PROPOS
-  ================================= */
-  .SectionApropos {
-    background-color: #ffffff;
-  }
-  
-  .SectionApropos h2 {
-    font-family: "Dancing Script", cursive;
+}
+
+
+
+/* ================================
+   SECTION À PROPOS
+================================= */
+.SectionApropos {
+    background-color: #DCDCDC;
+}
+
+.SectionApropos h2 {
+    font-family: "Special Gothic Expanded One", sans-serif;
     font-size: 2rem;
     text-align: left;
     margin-bottom: 1.5rem;
     color: #333;
-  }
-  
-  .apropos-container {
+}
+
+.apropos-container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -141,16 +155,16 @@
     gap: 1.5rem;
     max-width: 900px;
     margin: 0 auto;
-  }
-  
-  .apropos-image img {
+}
+
+.apropos-image img {
     width: 120px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  }
-  
-  .apropos-texte {
+}
+
+.apropos-texte {
     flex: 1;
     min-width: 200px;
     max-width: 500px;
@@ -158,64 +172,92 @@
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
-  }
-  
-  .apropos-texte h3 {
+}
+
+.apropos-texte h3 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: #007BFF;
-  }
-  
-  .apropos-texte p {
+    color: #0378A6;
+}
+
+.apropos-texte p {
     font-size: 0.9rem;
     line-height: 1.5;
     color: #333;
-  }
-  
-  /* ================================
-     SECTION COMPÉTENCES
-  ================================= */
-  .SectionCompétences {
-    background-color: #DCDCDC;
-    text-align: left;
-    position: relative;
-    margin-bottom: -5px;
-  }
-  
-  .competences-grid {
+}
+
+/* ================================
+   SECTION COMPÉTENCES
+================================= */
+.SectionCompétences {
+    background-color: #ffffff;
+}
+
+.section-title {
+    font-size: 1,1rem;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    color: #333;
+    padding: 15px;
+}
+
+.competences-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    max-width: 1000px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  .competence-card {
-    background-color: #faf8f8;
-    border-radius: 15px;
-    padding: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* ================================
-     SECTION RÉFÉRENCES
-  ================================= */
-  .SectionRéférences {
+}
+
+.competence-card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.competence-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.competence-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #0378A6;
+    font-weight: bold;
+}
+
+.competence-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+
+/* ================================
+   SECTION RÉFÉRENCES
+================================= */
+.SectionRéférences {
     background-color: #ffffff;
     text-align: center;
     margin-top: -5px;
-  }
-  
-  .references-container {
+}
+
+.references-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
     max-width: 1000px;
     margin: 0 auto;
-  }
-  
-  .reference-card {
+}
+
+.reference-card {
     background-color: #F8F9FA;
     padding: 2rem;
     border-radius: 12px;
@@ -225,129 +267,409 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .reference-card img {
+}
+
+.reference-card img {
     width: 100px;
     height: auto;
     object-fit: contain;
     margin-bottom: 1rem;
     border-radius: 6px;
-  }
-  
-  .reference-card h2 {
+}
+
+.reference-card h2 {
     font-size: 1.3rem;
-    color: #007BFF;
+    color: #0378A6;
     margin-bottom: 0.5rem;
     text-align: center;
-  }
-  
-  .reference-card p {
+}
+
+.reference-card p {
     margin: 0.3rem 0;
     color: #444;
     font-size: 0.95rem;
     text-align: center;
-  }
-  
-  .reference-card a {
+}
+
+.reference-card a {
     display: block;
     margin-top: 1rem;
     font-size: 0.9rem;
-    color: #fd0000;
+    color: #CF9F13;
     text-decoration: none;
     word-break: break-word;
     text-align: center;
-  }
-  
-  .reference-card a:hover {
+}
+
+.reference-card a:hover {
     text-decoration: underline;
-  }
-  
-  /* ================================
-     SECTION ME CONTACTER
-  ================================= */
-  .SectionMeContacter {
-    background-color: #DCDCDC;
-    text-align: center;
-    position: relative;
-    margin-top: -5px;
-  }
-  
-  .contact-form {
+}
+
+.references {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    background-color: #f4f4f4;
+}
+
+.reference-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 100%;
     max-width: 600px;
-    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reference-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.reference-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.reference-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* ================================
+   SECTION ME CONTACTER
+================================= */
+.SectionMeContacter {
+    background-color: #DCDCDC;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.SectionMeContacter .section-title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    gap: 2rem;
+}
+
+.contact-form {
+    width: 100%;
     background-color: #F8F9FA;
     padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .contact-form .form-group {
-    margin-bottom: 1rem;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
     width: 100%;
-    padding: 0.8rem;
-    margin-top: 0.3rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  .contact-form button {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 0.8rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #bbb;
     font-size: 1rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .contact-form button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* ================================
-     WAVES
-  ================================= */
-  .wave {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #023859;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+
+.contact-form button {
+    background-color: #023859;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.33s ease;
+
+}
+
+.contact-form button:hover {
+    background-color: #145a86f0;
+}
+
+/* ================================
+   WAVES
+================================= */
+.wave {
     width: 100%;
     height: 280px;
     background: url('top wave.svg') repeat-x;
     background-color: #ffffff;
-    background-size: 100% 100%;
-  }
-  
-  .wave-bot {
+    background-size: cover;
+}
+
+.wave-bot {
     width: 100%;
     height: 280px;
-    background: url('wave bot.svg') repeat-x;
+    background: url('wavebot.svg') repeat-x;
+
     background-color: #ffffff;
-    background-size: 100% 100%;
-  }
-  
-  .wave-bottom-competences,
-  .wave-top-contact {
+    background-size: cover;
+}
+
+.wave-bottom-competences,
+.wave-top-contact {
     line-height: 0;
     position: relative;
     z-index: 1;
-  }
-  
-  .wave-bottom-competences svg,
-  .wave-top-contact svg {
+}
+
+.wave-bottom-competences svg,
+.wave-top-contact svg {
     display: block;
     width: 100%;
     height: auto;
-  }
-  
-  .wave-top-contact {
+}
+
+.wave-top-contact {
     margin-bottom: -1px;
-  }
-  
-  .wave-bottom-competences {
+}
+
+.wave-bottom-competences {
     margin-top: -1px;
-  }
-  
+}
+
+/* ================================
+   BOUTONS CV & LINKEDIN dans "Me Contacter"
+================================= */
+.cv-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.cv-button,
+.linkedin-button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.cv-button {
+    background-color: #CF9F13;
+    color: #1E2526;
+}
+
+.linkedin-button {
+    background-color: #023859;
+    color: #CF9F13;
+}
+
+.cv-button:hover,
+.linkedin-button:hover {
+    transform: translateY(-2px);
+}
+
+.cv-button:active,
+.linkedin-button:active {
+    transform: translateY(2px);
+}
+
+
+/* ================================
+   SECTION FORMATIONS
+================================= */
+.SectionFormations {
+    background-color: #DCDCDC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.SectionFormations .section-title {
+    margin-bottom: 2rem;
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.formations-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.formation-item {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formation-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.formation-item h3 {
+    font-size: 1.4rem;
+    color: #0378A6;
+    margin-bottom: 1rem;
+}
+
+.formation-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+/* Petits écrans : smartphones */
+@media (max-width: 768px) {
+
+    .navigation {
+        padding: 1rem;
+    }
+
+    .section-navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .article-navigation ul {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+        padding-left: 0;
+    }
+
+    .section-image-nom h1 {
+        font-size: 2rem;
+    }
+
+    .section-image-nom p {
+        font-size: 1rem;
+    }
+
+    #etudiant {
+        font-size: 4vw;
+        padding: 10px;
+    }
+
+    .section-title {
+        font-size: 6vw;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-align: center;
+    }
+
+    .apropos-container {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .competences-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .references-container,
+    .formations-list {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .contact-content {
+        padding: 0 1rem;
+    }
+
+    .contact-form {
+        padding: 1rem;
+    }
+
+    .cv-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .formation-item,
+    .reference-card {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Très petits écrans (moins de 480px) */
+@media (max-width: 480px) {
+
+    .section-image-nom h1 {
+        font-size: 1.5rem;
+    }
+
+    .section-image-nom p {
+        font-size: 0.9rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+
+    .contact-form button {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .cv-button,
+    .linkedin-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 7vw;
+    }
+}
+
